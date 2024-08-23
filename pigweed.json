@@ -1,0 +1,30 @@
+{
+  "pw": {
+    "pw_presubmit": {
+      "format": {
+        "python_formatter": "black",
+        "exclude": [
+          "^patches\\.json$"
+        ]
+      }
+    },
+    "pw_env_setup": {
+      "root_variable": "QUICKSTART_CMAKE_ROOT",
+      "relative_pigweed_root": "third_party/pigweed",
+      "cipd_package_files": [
+        "third_party/pigweed/pw_env_setup/py/pw_env_setup/cipd_setup/cmake.json",
+        "third_party/pigweed/pw_env_setup/py/pw_env_setup/cipd_setup/default.json"
+      ],
+      "virtualenv": {
+        "gn_root": ".",
+        "gn_targets": [
+          "default"
+        ]
+      },
+      "required_submodules": [
+        "third_party/pigweed"
+      ],
+      "gni_file": "build_overrides/pigweed_environment.gni"
+    }
+  }
+}

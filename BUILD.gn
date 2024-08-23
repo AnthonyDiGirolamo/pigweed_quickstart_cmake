@@ -1,0 +1,7 @@
+import("//build_overrides/pigweed.gni")
+
+group("default") {
+  deps = [
+    "$dir_pigweed/pw_env_setup:pip_install_pigweed_package"
+  ]
+}

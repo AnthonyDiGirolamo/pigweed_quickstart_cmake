@@ -1,0 +1,54 @@
+# Build
+out/
+.presubmit/
+compile_commands.json
+bazel-*
+user.bazelrc
+MODULE.bazel.lock
+
+# Environment
+.environment
+environment
+build_overrides/pigweed_environment.gni
+
+# Editors
+.idea/
+.project
+.cproject
+.vscode
+.clangd/
+*.swp
+*.swo
+
+# Python
+python*-env/
+.python*-env/
+venv/
+*.pyc
+*.egg/
+*.eggs/
+*.egg-info/
+.cache/
+.mypy_cache/
+__pycache__/
+
+# Mac
+.DS_Store
+
+# GDB
+.gdb_history
+
+# Git
+*.orig
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+# Other
+logfile.txt
+pw_console-*logs.txt
