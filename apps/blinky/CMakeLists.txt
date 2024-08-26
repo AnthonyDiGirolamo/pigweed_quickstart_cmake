@@ -11,4 +11,5 @@ target_link_libraries(blinky
   pw_system.rpc_server
   pw_system.init
   pw_log
+  pw_board_led.impl
 )
